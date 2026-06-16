@@ -79,12 +79,22 @@ export default function Index() {
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Нейро-мозг фон */}
         <div
-          className="absolute inset-0 bg-cover bg-no-repeat"
-          style={{ backgroundImage: `url(${HERO_IMAGE})`, backgroundPosition: "75% top" }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(https://cdn.poehali.dev/projects/eaf7ec4f-084f-4238-a27b-9c04263f59d3/files/df025b3a-f167-4226-b5a6-3fddc2765f18.jpg)` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f]/70 via-[#0a0a0f]/50 to-[#0a0a0f]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0f]/80 via-transparent to-[#0a0a0f]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f]/60 via-[#0a0a0f]/40 to-[#0a0a0f]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0f]/85 via-[#0a0a0f]/30 to-[#0a0a0f]/10" />
+        {/* Фото психолога справа */}
+        <div className="absolute bottom-0 right-0 md:right-8 lg:right-16 h-full max-h-[95%] flex items-end pointer-events-none">
+          <img
+            src={HERO_IMAGE}
+            alt="Психолог"
+            className="h-full object-contain object-bottom drop-shadow-2xl"
+            style={{ maxWidth: "420px" }}
+          />
+        </div>
 
         <div className="absolute top-1/3 left-0 w-1 h-32 bg-orange-500" />
         <div className="absolute bottom-1/4 right-0 w-1 h-48 bg-blue-500" />
