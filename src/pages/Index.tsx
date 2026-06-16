@@ -90,8 +90,8 @@ export default function Index() {
           style={{
             backgroundImage: `url(${HERO_IMAGE})`,
             backgroundPosition: "center top",
-            mixBlendMode: "luminosity",
-            opacity: 0.55,
+            mixBlendMode: "normal",
+            opacity: 0.85,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f]/50 via-[#0a0a0f]/40 to-[#0a0a0f]" />
