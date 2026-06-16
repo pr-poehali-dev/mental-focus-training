@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMAGE = "https://cdn.poehali.dev/projects/eaf7ec4f-084f-4238-a27b-9c04263f59d3/files/df025b3a-f167-4226-b5a6-3fddc2765f18.jpg";
+const HERO_IMAGE = "https://cdn.poehali.dev/projects/eaf7ec4f-084f-4238-a27b-9c04263f59d3/bucket/fa433413-1ba3-4103-95a0-fb202339344f.png";
 
 const problems = [
   { icon: "Zap", text: "На тренировках всё получается — на соревнованиях руки-ноги не слушаются" },
@@ -80,8 +80,8 @@ export default function Index() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${HERO_IMAGE})` }}
+          className="absolute inset-0 bg-cover bg-no-repeat"
+          style={{ backgroundImage: `url(${HERO_IMAGE})`, backgroundPosition: "75% top" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f]/70 via-[#0a0a0f]/50 to-[#0a0a0f]" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0f]/80 via-transparent to-[#0a0a0f]/40" />
